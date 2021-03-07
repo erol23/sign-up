@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form action="#">
+        <div id="container">
+            <h1 id="title">Sign Up</h1>
+            <fieldset>
+                <legend>Your Basic Info</legend>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" class="box" required><br>
+                <label for="emai">Email:</label><br>
+                <input type="email" name="email" id="email" class="box" required><br>
+                <label for="password">Password:</label><br>
+                <input type="password" name="password" id="password" class="box" required><br>
+                <label for="age">Age:</label><br>
+                <input type="radio" name="under" id="under">
+                <label for="under">Under 13</label><br>
+                <input type="radio" name="over" id="over" checked>
+                <label for="over">Over 13</label>
+            </fieldset>
+            <fieldset>
+                <legend>Your Profile</legend>
+                <label for="Bio">Bio:</label><br>
+                <textarea name="Bio" id="Bio" cols="57" rows="8" placeholder="write something about yourself"></textarea><br>
+                <label for="Jobrole">Job Role:</label><br>
+                <select name="Jobrole" id="Jobrole" class="box">
+                    <optgroup label="Web">
+                        <option value="frontend">Front-End Developer</option>
+                        <option value="js-dvp">JS Developer</option>
+                        <option value="pyt-dvp">Python Developer</option>
+                        <option value="djg-dvp">Django Developer</option>
+                        <option value="web-desig">Web Designer</option>
+                        <option value="wrd-dvp">Wordpress Developer</option>
+                    </optgroup>
+                    <optgroup label="Mobile">
+                        <option value="andr-dvp">Android Developer</option>
+                        <option value="ios-dvp">Ios Developer</option>
+                        <option value="mobil-desig">Mobile Designer</option>
+                    </optgroup>
+                    <optgroup label="Business">
+                        <option value="busn-owner">Business Owner</option>
+                        <option value="freelancer">Freelancer</option>
+                    </optgroup>
+                </select>
+                <label for="interest">Interests:</label><br>
+                <input type="checkbox" name="devop" id="devop" checked>
+                <label for="devop">Development</label><br>
+                <input type="checkbox" name="desig" id="desig">
+                <label for="desig">Deign</label><br>
+                <input type="checkbox" name="businnes" id="business">
+                <label for="business">Businnes</label>
+            </fieldset>
+            <input type="submit" value="Sign Up" id="submit">
+        </div>
+    </form>
+</body>
+</html>
